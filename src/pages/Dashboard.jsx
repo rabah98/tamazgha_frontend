@@ -57,7 +57,7 @@ const Dashboard = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:3000/users/${user.id}`, {
+      const response = await fetch(`https://miniature-enigma-rq46v7ggvx63xqwr-3000.app.github.dev/users/${user.id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
